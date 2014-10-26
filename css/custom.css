@@ -1,0 +1,117 @@
+video#bgvideo {
+	position: fixed; 
+	right: 0; 
+	bottom: 0;
+	min-width: 100%; 
+	min-height: 100%;
+	width: auto;
+	height: auto; 
+	z-index: -100;
+	background: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+header#mainheader {
+	background: transparent;
+	color: white;
+}
+
+footer {
+	background-color: white;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+header#mainheader h1, h2 {
+	color: white;
+}
+
+.active a {
+	background:	#00cc9a; 
+	color: #FFF;
+}
+
+ul.flyout li a, .nav-bar li ul li a:hover { 
+	background: #009973; 
+	color:#FFF; 
+	border: 0; 
+	font-size: 16px;
+}
+
+#txtdial {
+	opacity: .5;
+	color: black;
+	font-weight: bold;
+	margin-top: 30px;
+	margin-right: 30px;
+	margin-bottom: 30px;
+}
+
+#lyrics {
+	margin-top: 52%;
+}
+
+h2#lyrics {
+	font-weight: bold;
+}
+
+img#thedevs {
+	width:250px; 
+	height:250px;
+}
+
+.button {
+	background-color: #00cc9a;
+}
+
+.reveal-modal {
+	border-radius: 10px;
+}
+
+.reveal-modal img {
+	margin-right: 24px;
+	float: left;
+}
+
+.reveal-modal p.lead {
+	font-size: 30px;
+}
+
+.reveal-modal p {
+	font-size: 15px;
+	text-align: justify;
+}
+
+.footer-sponsors {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.panel {
+	opacity: 0.8;
+	border-radius: 10px;
+}
+
+#controlPanel {
+	z-index: 1000;
+}
+
+footer {
+	background-color: #262626;
+	color: white;
+}
+
+footer ul li a {
+	color: #00cc9a;
+}
+
+#song-lib-title {
+	color: #00cc9a;
+}
+
+#reservedSongs {
+	color:#00cc9a;
+	font-family: arial;
+	font-weight:bold;
+}

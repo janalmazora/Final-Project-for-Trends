@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+
+<title>Singer's Hub</title>
+
+<link rel="stylesheet" href="css/foundation.min.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/custom.css">
+<link rel="stylesheet" href="css/lyrics.css">
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/ligature.css">
+<link rel="stylesheet" href="css/google-fonts.css">
+
+<script type="text/javascript" src="js/modernizr.foundation.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/priority.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+</head>
+
+<body>
+
+<nav>
+  <div class="twelve columns header_nav">
+    <div class="row">
+      <ul id="menu-header" class="nav-bar horizontal">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="song-library.html">Song Library</a></li>
+        <li class="active"><a href="karaoke.html">Start Singing!</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>  
+  </div>
+</nav>
+                      
+<section class="section_main">
+  <video id="bgvideo">
+    <source id="video-background" src="" type="video/mp4">
+  </video>
+
+  <div class="eight columns">
+    <h3  id="reservedSongs"></h3>
+  </div>
+  
+  <div id="controlPanel" class="four columns panel" onmouseover="ShowControlPanel()" onmouseleave="HideControlPanel()">
+    <h2 style="color:black">Singer's Hub</h2>
+
+    <input name="txtDial" id="txtdial" type="text" placeholder="dial song number here" onkeyup="dialSongSfx(event);" />
+    <!-- <button onclick="stopSong()">Stop</button> -->
+
+    <div class="six columns">
+      Volume <input type="range" id="rngVolume" step="any" min="0" max="1.0" value="1.0" onChange="toggleVol()">
+    </div>
+
+    <div class="six columns">
+      <strong>Now Playing:</strong> <br />
+      <marquee id="mq-nowplaying">No song is playing</marquee>
+    </div>
+  </div>
+
+  <div class="twelve columns">
+    <header id="mainheader">
+      <h1 class="heading_supersize" id="project-title" style="color:#00cc9a;-webkit-text-stroke: .3px black; text-align:center;">
+        <big id="song-title">Singer's Hub</big> <br /><small id="song-artist"></small>
+      </h1>    
+    </header>
+  </div>
+
+  <h2 style="text-align:center" id="lyrics"></h2>  
+</section>
+
+<!-- ***** footer ***** -->
+<footer>
+  <div class="row">   
+    <div class="twelve columns footer">
+      <div class="four columns text-left hide-for-small">
+        Powered By <br />
+        <ul class="no-bullet">
+          <li><a href="http://foundation.zurb.com/" target="_blank">Foundation</a></li>
+          <li><a href="http://www.csstemplateheaven.com/" target="_blank">CssTemplateHeaven</a></li>
+        </ul>
+      </div>
+
+      <div class="four columns">
+        <strong>www.singershub.com.ph</strong> <br />
+        <em>"An online karaoke for everyone!"</em> <br /> <br />
+        &copy; Copyrights 2014
+      </div>
+
+      <div class="four columns text-right hide-for-small">
+        Developed By <br />
+        <ul class="no-bullet">
+          <li><a href="" target="_blank" class="footer-sponsors">Jeo Torrena</a></li>
+          <li><a href="" target="_blank" class="footer-sponsors">Jan Almazora</a></li>
+          <li><a href="" target="_blank" class="footer-sponsors">Ramolito Javier</a></li>
+          <li><a href="" target="_blank" class="footer-sponsors">Ynigo Limcangco</a></li>
+        </ul> 
+      </div>
+  </div>
+</footer>   	  
+
+<!-- ***** JavaScripts ***** -->
+<script type="text/javascript" src="js/foundation.min.js"></script> 
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/lyrics.js"></script>
+<script type="text/javascript" src="js/karaoke.js"></script>
+</body>
+</html>
